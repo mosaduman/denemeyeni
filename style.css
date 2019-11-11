@@ -1,0 +1,218 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 0;
+	padding: 0;
+background-image: url(bg.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+
+}
+.body{
+
+	
+	border-top: 5px solid blue;
+background-color: #fff;
+	border-bottom: 5px solid #1d2127;
+		border-radius: 5px;
+    border-top: 5px solid #08c;
+    box-shadow: 0 0 4px rgba(0,0,0,.15);
+    margin: 25px auto;
+    max-width: 1200px;
+    height: auto;
+}
+.header{
+	
+border-top: 2px solid #ededed;
+    min-height: 100px;
+}
+header .logo{
+	float: left;
+	color: black;
+	font-size: 25px;
+}
+header nav ul {
+	float: right;
+}
+header nav ul li{
+	display: inline-block;
+	list-style-type: none;
+
+	
+	margin-top: 55px;
+
+}
+header nav ul li a{
+	text-decoration: none;
+	font-size: 25px;
+	padding: 15px;
+	color: #08c;
+}
+
+header nav ul li a:hover{
+	background-color: #08c;
+	color:white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#btn-menu {
+	display: none;
+}
+header label {
+	display: none;
+	width: 32px;
+	height: 32px;
+	padding: 10px;
+	border-right: 1px solid #ffffff;
+}
+
+
+@media (max-width:768px){
+	.logo{
+		float: left;
+	}
+	header label {
+		display: block;
+	float: right;
+	}
+	
+	header label:after{
+		content: "";
+		clear: none;
+	}
+	.menu {
+			display: none;
+		
+		/*
+		z-index: 9;
+		position: absolute;
+		top: 70px;
+		background-color:  #08c;
+		width: 100%;
+		height: 0;
+		margin-top:50px;
+		display: none;
+	transition: all 0.7s;*/
+	}
+	
+.menu ul {
+		z-index: 9;
+	top: 70px;
+    position: absolute;
+    background: #171717;
+    max-height: none;
+    width: 100%;
+	
+transition: all 0.7s;
+	}
+	.menu li {
+				display: block;
+		margin-left: 10px;
+margin: 25px;
+	}
+	.menu li a{
+		color:#ffff;
+		font-size: 20px;
+	}
+		.menu li a:hover{
+
+		color:red;
+		background-color: #171717;
+	}
+	#btn-menu:checked ~ .menu {
+		margin: 0;
+		display: block;
+			height: 70%;
+		transition: all 0.4s;
+	
+	}
+.prev, .next,.text {font-size: 11px;}
+
+
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;
+	height: 450px;
+	
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+	margin-top: 92px;
+}
+.slideshow-container:hover .prev,
+.slideshow-container:hover .next{
+			transition: all 0.8s;
+display: block;
+}
+/* Next & previous buttons */
+.prev, .next {
+	display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  user-select: none;
+	  background-color:  black;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+	  background-color: black;
+	color: white;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 98%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  
+}
+
